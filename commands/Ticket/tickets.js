@@ -4,7 +4,7 @@ const config = require('../../config.json'),
     const db = require("quick.db")
  
 module.exports = {
-    run: async (client, message, args, dd, prefix) => {
+    run: async (client, message, args) => {
         if (message.guild){
          if (db.fetch(`ticket_${message.guild.id}`, message.author.id))
          return message.channel.send(`**Vous avez déjà un ticket d'ouvert !**`).then(sent => sent.delete({timeout:3e3}))
