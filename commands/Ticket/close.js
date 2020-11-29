@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const db = require("quick.db")
  
 module.exports = {
-    run: async (client, message, args, dd, prefix) => {
+    run: async (client, message, args) => {
         const channel = message.mentions.channels.first() || message.channel
 
 
