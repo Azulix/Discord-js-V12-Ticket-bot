@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 const db = require("quick.db")
  
 module.exports = {
-    run: async (client, message, args, dd, prefix) => {
+    run: async (client, message, args) => {
         const channel = message.mentions.channels.first() || message.channel
         
         if (!message.member.hasPermission('MANAGE_MESSAGES') && (`ticket_${message.guild.id}`, message.author.id).author !== message.author.id) return message.channel.send('**Vous n\'avez pas la permission de fermer ce ticket.**')      
