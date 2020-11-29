@@ -1,6 +1,5 @@
-const config = require('../../config.json'),
-    fs = require('fs'),
-    Discord = require('discord.js')
+
+    const Discord = require('discord.js')
     const db = require("quick.db")
  
 module.exports = {
